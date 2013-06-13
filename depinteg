@@ -1,0 +1,5 @@
+
+cd ~/workspace/aptisec/aptisec
+
+mvn clean package
+~/scripts/cpear

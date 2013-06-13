@@ -1,0 +1,18 @@
+
+
+VM_INTEGRATION=aptisec@fr-wst-vm-0913.groupinfra.com
+VM_AMAZON=root@ec2-54-216-88-218.eu-west-1.compute.amazonaws.com
+
+#scp -i base.pem ../souche/jboss-as-7.1.1.Final.zip $VM_AMAZON:~/souche/
+#scp -i base.pem ../souche/jdk-7u21-linux-x64.gz $VM_AMAZON:~/souche/
+
+#scp ../souche/jboss-as-7.1.1.Final.zip $VM_INTEGRATION:~/souche/
+#scp ../souche/jdk-7u21-linux-x64.gz $VM_INTEGRATION:~/souche/
+#scp ../souche/mysql-5.6.10-linux-glibc2.5-x86_64.tar.gz $VM_INTEGRATION:~/souche/
+scp ../souche/httpd-2.2.24.tar.gz $VM_INTEGRATION:~/souche/
+
+
+
+
+
+

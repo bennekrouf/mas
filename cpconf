@@ -1,0 +1,10 @@
+
+
+
+scp -i ~/.ssh/id_rsa /c/Users/bennekroufm/jboss-as-7.1.1.Final/standalone/configuration/standalone.xml root@fr-wst-vm-0913.groupinfra.com:/moteurs/jboss-as/standalone/configuration/
+
+scp -i ~/.ssh/id_rsa /c/Users/bennekroufm/jboss-as-7.1.1.Final/standalone/configuration/standalone-full.xml root@fr-wst-vm-0913.groupinfra.com:/moteurs/jboss-as/standalone/configuration/
+
+scp -i ~/.ssh/id_rsa /c/Users/bennekroufm/workspace/aptisec/aptisec/aptisec-web/src/main/resources/config/module.xml root@fr-wst-vm-0913.groupinfra.com:/moteurs/jboss-as/modules/com/mysql/main/
+
+scp -i ~/.ssh/id_rsa /c/Users/bennekroufm/workspace/aptisec/aptisec/aptisec-web/src/main/resources/config/mysql-connector-java-5.1.20-bin.jar root@fr-wst-vm-0913.groupinfra.com:/moteurs/jboss-as/modules/com/mysql/main/

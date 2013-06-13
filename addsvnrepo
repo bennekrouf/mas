@@ -1,0 +1,11 @@
+if [ $# -eq 0 ]
+  then
+    echo "Donne moi le nom du repo svn que tu veux creer stp"
+fi
+
+mkdir /var/svn/$1
+cd /var/svn
+
+sudo svnadmin create $1
+sudo chown -R www-data:svn $1
+sudo chmod -R g+rws app

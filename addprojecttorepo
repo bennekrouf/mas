@@ -1,0 +1,5 @@
+mkdir $1
+mkdir $1/trunk
+mkdir $1/branches
+mkdir $1/tags
+svn import $1 http://fr-wst-vm-0909.groupinfra.com/svn/$2 -m "info"
