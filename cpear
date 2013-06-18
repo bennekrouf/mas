@@ -19,3 +19,6 @@ echo "#######################################"
 #scp /c/Users/bennekroufm/jboss-as-7.1.1.Final/standalone/deployments/aptisec-ear-1.0-SNAPSHOT.ear $VM:/moteurs/jboss-as/standalone/deployments
 
 #scp /c/Users/bennekroufm/jboss-as-7.1.1.Final/standalone/deployments/aptisec-ear-1.0-SNAPSHOT.ear aptisecuser@aptisec01.cloudapp.net:~/souche
+
+
+cp /c/Users/bennekroufm/workspace/aptisec-test-svn/aptisec/aptisec-ear/target/aptisec-ear-1.0-SNAPSHOT.ear /c/Users/bennekroufm/jboss-as-7.1.1.Final/standalone/deployments/
