@@ -1,1 +1,8 @@
+source conf.secret
+
+CURRENT="Open TCP PORT"
+
+echo "Target Operation: " $CURRENT
+echo "#######################################"
+
 sudo iptables -A INPUT -p tcp -d 0/0 -s 0/0 --dport $1 -j ACCEPT

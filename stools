@@ -1,1 +1,12 @@
-ssh mas@fr-wst-vm-0909
+source conf.secret
+
+CURRENT="Start VM Tools"
+
+VM=$VM_TOOLS
+
+echo "Target VM : " $VM
+echo "Target Operation: " $CURRENT
+echo "#######################################"
+
+
+ssh $VM

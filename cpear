@@ -1,6 +1,21 @@
+source conf.secret
 
-cp /c/Users/bennekroufm/workspace/aptisec/aptisec/aptisec-ear/target/aptisec-ear-1.0-SNAPSHOT.ear /c/Users/bennekroufm/jboss-as-7.1.1.Final/standalone/deployments/
+CURRENT=CPEAR
 
-scp /c/Users/bennekroufm/jboss-as-7.1.1.Final/standalone/deployments/aptisec-ear-1.0-SNAPSHOT.dodeploy root@fr-wst-vm-0913.groupinfra.com:/moteurs/jboss-as/standalone/deployments
+VM=$VM_INTEGRATION
+#VM=$VM_AMAZON
+#VM=$VM_AZURE
+#VM=$VM_TUNNEL
 
-scp /c/Users/bennekroufm/jboss-as-7.1.1.Final/standalone/deployments/aptisec-ear-1.0-SNAPSHOT.ear root@fr-wst-vm-0913.groupinfra.com:/moteurs/jboss-as/standalone/deployments
+
+echo "Target VM : " $VM
+echo "Target Operation: " $CURRENT
+echo "#######################################"
+
+#cp /c/Users/bennekroufm/workspace/aptisec/aptisec/aptisec-ear/target/aptisec-ear-1.0-SNAPSHOT.ear /c/Users/bennekroufm/jboss-as-7.1.1.Final/standalone/deployments/
+
+#scp /c/Users/bennekroufm/jboss-as-7.1.1.Final/standalone/deployments/aptisec-ear-1.0-SNAPSHOT.dodeploy $VM:/moteurs/jboss-as/standalone/deployments
+
+#scp /c/Users/bennekroufm/jboss-as-7.1.1.Final/standalone/deployments/aptisec-ear-1.0-SNAPSHOT.ear $VM:/moteurs/jboss-as/standalone/deployments
+
+#scp /c/Users/bennekroufm/jboss-as-7.1.1.Final/standalone/deployments/aptisec-ear-1.0-SNAPSHOT.ear aptisecuser@aptisec01.cloudapp.net:~/souche

@@ -1,10 +1,22 @@
+source conf.secret
+
+CURRENT=COPY CONF
+
+VM=$VM_INTEGRATION
+#VM=$VM_AMAZON
+#VM=$VM_AZURE
+#VM=$VM_TUNNEL
 
 
+echo "Target VM : " $VM
+echo "Target Operation: " $CURRENT
+echo "#######################################"
 
-scp -i ~/.ssh/id_rsa /c/Users/bennekroufm/jboss-as-7.1.1.Final/standalone/configuration/standalone.xml root@fr-wst-vm-0913.groupinfra.com:/moteurs/jboss-as/standalone/configuration/
 
-scp -i ~/.ssh/id_rsa /c/Users/bennekroufm/jboss-as-7.1.1.Final/standalone/configuration/standalone-full.xml root@fr-wst-vm-0913.groupinfra.com:/moteurs/jboss-as/standalone/configuration/
+scp -i ~/.ssh/id_rsa /c/Users/bennekroufm/jboss-as-7.1.1.Final/standalone/configuration/standalone.xml $VM:/moteurs/jboss-as/standalone/configuration/
 
-scp -i ~/.ssh/id_rsa /c/Users/bennekroufm/workspace/aptisec/aptisec/aptisec-web/src/main/resources/config/module.xml root@fr-wst-vm-0913.groupinfra.com:/moteurs/jboss-as/modules/com/mysql/main/
+scp -i ~/.ssh/id_rsa /c/Users/bennekroufm/jboss-as-7.1.1.Final/standalone/configuration/standalone-full.xml $VM:/moteurs/jboss-as/standalone/configuration/
 
-scp -i ~/.ssh/id_rsa /c/Users/bennekroufm/workspace/aptisec/aptisec/aptisec-web/src/main/resources/config/mysql-connector-java-5.1.20-bin.jar root@fr-wst-vm-0913.groupinfra.com:/moteurs/jboss-as/modules/com/mysql/main/
+scp -i ~/.ssh/id_rsa /c/Users/bennekroufm/workspace/aptisec/aptisec/aptisec-web/src/main/resources/config/module.xml $VM:/moteurs/jboss-as/modules/com/mysql/main/
+
+scp -i ~/.ssh/id_rsa /c/Users/bennekroufm/workspace/aptisec/aptisec/aptisec-web/src/main/resources/config/mysql-connector-java-5.1.20-bin.jar $VM:/moteurs/jboss-as/modules/com/mysql/main/

@@ -4,6 +4,3 @@ if [ $# -eq 0 ]
 fi
 
 sudo htpasswd /etc/apache2/dav_svn.passwd $1
-
-# Download redmine installer
-#wget http://bitnami.com/redirect/to/18879/bitnami-redmine-2.3.0-2-linux-installer.run

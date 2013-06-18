@@ -1,1 +1,14 @@
-ssh aptisec@fr-wst-vm-0913.groupinfra.com
+
+source conf.secret
+
+CURRENT="Start VM Tools"
+
+VM=$VM_INTEGRATION
+
+echo "Target VM : " $VM
+echo "Target Operation: " $CURRENT
+echo "#######################################"
+
+
+ssh $VM
+

@@ -1,5 +1,22 @@
+
+
+source conf.secret
+
+CURRENT=ADD PROJECT TO REPO
+
+VM=$VM_INTEGRATION
+#VM=$VM_AMAZON
+#VM=$VM_AZURE
+#VM=$VM_TUNNEL
+
+
+echo "Target VM : " $VM
+echo "Target Operation: " $CURRENT
+echo "#######################################"
+
+
 mkdir $1
 mkdir $1/trunk
 mkdir $1/branches
 mkdir $1/tags
-svn import $1 http://fr-wst-vm-0909.groupinfra.com/svn/$2 -m "info"
+svn import $1 http://$SVN_SERVER/svn/$2 -m "info"
