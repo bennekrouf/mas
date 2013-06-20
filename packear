@@ -1,0 +1,13 @@
+source conf.secret
+
+
+
+if [ ! -d target ]; then
+	mkdir target
+fi
+cp $HOME/workspace/aptisec/aptisec/aptisec-ear/target/aptisec-ear-1.0-SNAPSHOT.ear target
+
+tar -zcvf aptisec-1.0.tar.gz target
+rm -r target
+
+#tar -zxvf tar-archive-name.tar.gz 

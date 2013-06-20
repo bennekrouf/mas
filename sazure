@@ -1,0 +1,12 @@
+source conf.secret
+
+CURRENT="Start VM Tools"
+
+VM=$VM_AZURE
+
+echo "Target VM : " $VM
+echo "Target Operation: " $CURRENT
+echo "#######################################"
+
+
+ssh $VM

@@ -1,0 +1,15 @@
+source conf.secret
+
+if [ ! -d target ]; then
+	mkdir target
+fi
+
+cp $JBOSS_HOME/standalone/configuration/standalone.xml target
+cp $JBOSS_HOME/standalone/configuration/standalone-full.xml target
+cp $JBOSS_HOME/modules/com/mysql/main/module.xml target
+cp $JBOSS_HOME/modules/com/mysql/main/mysql-connector-java-5.1.20-bin.jar target
+
+tar -zcvf aptisec-1.0-conf.tar.gz target
+rm -r target
+
+#tar -zxvf tar-archive-name.tar.gz 
