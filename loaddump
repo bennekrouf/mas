@@ -1,0 +1,40 @@
+
+mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APP_AS_ACTEUR_SECU.sql"
+
+mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APP_AS_AGENT_SNCF.sql"
+
+mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APP_AS_AGT_ROLE_HRA.sql"
+
+mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APP_AS_ASSO_FONCT_PROFIL.sql"
+
+mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APP_AS_ASSO_USER_ETAB_SNCF.sql"
+
+mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APP_AS_CONTACT_ETB_ENT_EXT.sql"
+
+mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APP_AS_CONTACT_GEST_RH.sql"
+
+mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APP_AS_CRENEAU.sql"
+
+mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APP_AS_ENTETE_CFAS.sql"
+
+mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APP_AS_ENTREPRISE_EXTERIEURE.sql"
+
+mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APP_AS_ESPACE_CFAS.sql"
+
+mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APP_AS_ETABLISSEMENT_ENTR_EXT.sql"
+
+mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APP_AS_FONCTIONNALITE.sql"
+
+mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APP_AS_GENERATION.sql"
+
+mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APP_AS_JOURNAL.sql"
+
+mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APP_AS_PROFIL.sql"
+
+mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APP_AS_RENDEZ_VOUS.sql"
+
+mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APP_AS_UO_DETAILLEE.sql"
+
+mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APP_AS_UO_ETALEE.sql"
+
+mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APP_AS_USER.sql"
