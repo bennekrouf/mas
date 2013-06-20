@@ -12,13 +12,6 @@ echo "Target VM : " $VM
 echo "Target Operation: " $CURRENT
 echo "#######################################"
 
-#cp /c/Users/bennekroufm/workspace/aptisec/aptisec/aptisec-ear/target/aptisec-ear-1.0-SNAPSHOT.ear /c/Users/bennekroufm/jboss-as-7.1.1.Final/standalone/deployments/
-
-#scp /c/Users/bennekroufm/jboss-as-7.1.1.Final/standalone/deployments/aptisec-ear-1.0-SNAPSHOT.dodeploy $VM:/moteurs/jboss-as/standalone/deployments
-
-#scp /c/Users/bennekroufm/jboss-as-7.1.1.Final/standalone/deployments/aptisec-ear-1.0-SNAPSHOT.ear $VM:/moteurs/jboss-as/standalone/deployments
-
-#scp /c/Users/bennekroufm/jboss-as-7.1.1.Final/standalone/deployments/aptisec-ear-1.0-SNAPSHOT.ear aptisecuser@aptisec01.cloudapp.net:~/souche
-
-
-cp /c/Users/bennekroufm/workspace/aptisec-test-svn/aptisec/aptisec-ear/target/aptisec-ear-1.0-SNAPSHOT.ear /c/Users/bennekroufm/jboss-as-7.1.1.Final/standalone/deployments/
+cp $WORKSPACE/aptisec/aptisec-ear/target/aptisec-ear-1.0-SNAPSHOT.ear $JBOSS_HOME/standalone/deployments/
+scp $JBOSS_HOME/standalone/deployments/aptisec-ear-1.0-SNAPSHOT.dodeploy $VM:/moteurs/jboss-as/standalone/deployments
+scp $JBOSS_HOME/standalone/deployments/aptisec-ear-1.0-SNAPSHOT.ear $VM:/moteurs/jboss-as/standalone/deployments

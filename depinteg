@@ -1,5 +1,6 @@
+source conf.secret
 
-cd ~/workspace/aptisec/aptisec
+cd $WORKSPACE/aptisec
 
-mvn clean package
+#mvn clean package
 ~/mas/cpear
