@@ -1,0 +1,21 @@
+source conf.secret
+
+TARGET_DIR=data
+
+if [ ! -d $TARGET_DIR ]; then
+	mkdir $TARGET_DIR
+fi
+
+mkdir $TARGET_DIR/dump
+mkdir $TARGET_DIR/dump-full
+
+cp ~/mas/dump/* $TARGET_DIR/dump
+cp ~/mas/dump-full/* $TARGET_DIR/dump-full
+
+cp ~/mas/loaddump $TARGET_DIR/dump
+cp ~/mas/loaddump $TARGET_DIR/dump-full
+
+tar -zcvf aptisec-1.0-data.tar.gz $TARGET_DIR
+rm -r $TARGET_DIR
+
+#tar -zxvf tar-archive-name.tar.gz 
