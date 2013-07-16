@@ -17,10 +17,11 @@ packdata
 packear
 packconf
 packtalend
+packdoc
 
 
 scp ~/mas/aptisec-1.0-conf.tar.gz $VM:~/livraison
 scp ~/mas/aptisec-1.0-bin.tar.gz $VM:~/livraison
 scp ~/mas/aptisec-1.0-data.tar.gz $VM:~/livraison
 scp ~/mas/aptisec-1.0-talend.tar.gz $VM:~/livraison
-
+scp ~/mas/aptisec-1.0-doc.tar.gz $VM:~/livraison
