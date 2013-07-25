@@ -1,4 +1,6 @@
 
+mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APTISEC_AS_ACTEUR_SECU_AGENT_TMP.sql"
+
 mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APTISEC_AS_ACTEUR_SECU.sql"
 
 mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < "APTISEC_AS_AGENT_SNCF.sql"
