@@ -1,13 +1,12 @@
 source conf.secret
 
 TARGET_DIR=documentation
-HOME_LIVRAISON=LIVRAISON/16JUILLET
 
 
 if [ ! -d $TARGET_DIR ]; then
 	mkdir $TARGET_DIR
 fi
-cp -r $HOME_LIVRAISON/documentation/* $TARGET_DIR
+cp -r ../documentation/* $TARGET_DIR
 
 tar -zcvf aptisec-1.0-doc.tar.gz $TARGET_DIR
 rm -r $TARGET_DIR

@@ -15,8 +15,6 @@ cp loaddump $TARGET_DIR
 cp loaddump_full $TARGET_DIR
 
 tar -zcvf aptisec-1.0-data.tar.gz $TARGET_DIR
-mv aptisec-1.0-data.tar.gz $LIVRAISON_FOLDER
-
 rm -r $TARGET_DIR
 
 #tar -zxvf tar-archive-name.tar.gz
