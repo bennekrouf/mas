@@ -2,16 +2,16 @@ source conf.secret
 
 CURRENT=CPEAR
 
-VM=$VM_INTEGRATION
+#VM=$VM_INTEGRATION
 #VM=$VM_AMAZON
 #VM=$VM_AZURE
-#VM=$VM_TUNNEL
+VM=$VM_TUNNEL
 
 
 echo "Target VM : " $VM
 echo "Target Operation: " $CURRENT
 echo "#######################################"
 
-cp $WORKSPACE/aptisec/aptisec-ear/target/aptisec-ear-1.0-SNAPSHOT.ear $JBOSS_HOME/standalone/deployments/
-scp $JBOSS_HOME/standalone/deployments/aptisec-ear-1.0-SNAPSHOT.dodeploy $VM:/moteurs/jboss-as/standalone/deployments
-scp $JBOSS_HOME/standalone/deployments/aptisec-ear-1.0-SNAPSHOT.ear $VM:/moteurs/jboss-as/standalone/deployments
+#cp $WORKSPACE/aptisec/aptisec-ear/target/aptisec-ear-1.0-SNAPSHOT.ear $JBOSS_HOME/standalone/deployments/
+#scp $JBOSS_HOME/standalone/deployments/aptisec-ear-1.0-SNAPSHOT.dodeploy $VM:/moteurs/jboss-as/standalone/deployments
+scp /c/Users/bennekroufm/workspace/aptisec/aptisec/aptisec-ear/target/aptisec-ear-1.0-SNAPSHOT.ear $VM:~/

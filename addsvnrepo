@@ -1,3 +1,6 @@
+source conf.secret
+
+
 if [ $# -eq 0 ]
   then
     echo "Donne moi le nom du repo svn que tu veux creer stp"
@@ -8,4 +11,12 @@ cd /var/svn
 
 sudo svnadmin create $1
 sudo chown -R www-data:svn $1
-sudo chmod -R g+rws app
+sudo chmod -R g+rws $1
+
+mkdir $1
+mkdir $1/trunk
+mkdir $1/branches
+mkdir $1/tags
+
+echo "ECHOOOOO" $SVN_HOME/$1
+svn import $1 $SVN_HOME/$1 -m "info"
