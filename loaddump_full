@@ -1,0 +1,2 @@
+
+mysql --host=$HOST --user=$MYSQL_USER -p$MYSQL_PASSWD  --port=$MYSQL_PORT --default-character-set=utf8 --comments < $PROJET.sql

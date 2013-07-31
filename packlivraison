@@ -1,0 +1,37 @@
+source conf.secret
+
+CURRENT="PACK LIVRAISON"
+
+#VM=$VM_INTEGRATION
+#VM=$VM_AMAZON
+#VM=$VM_AZURE
+#VM=$VM_TUNNEL
+VM=$VM_TOOLS
+
+
+echo "Target VM : " $VM
+echo "Target Operation: " $CURRENT
+echo "#######################################"
+
+
+
+mkdir $LIVRAISON_FOLDER
+
+./packdata
+mv aptisec-1.0-data.tar.gz $LIVRAISON_FOLDER
+
+
+./packreprise
+mv aptisec-1.0-reprise.tar.gz $LIVRAISON_FOLDER
+
+./packear
+mv aptisec-1.0-bin.tar.gz $LIVRAISON_FOLDER
+
+./packconf
+mv aptisec-1.0-conf.tar.gz $LIVRAISON_FOLDER
+
+./packtalend
+mv aptisec-1.0-talend.tar.gz $LIVRAISON_FOLDER
+
+./packdoc
+mv aptisec-1.0-doc.tar.gz $LIVRAISON_FOLDER
