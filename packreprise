@@ -6,7 +6,7 @@ if [ ! -d $TARGET_DIR ]; then
 	mkdir $TARGET_DIR
 fi
 
-chmod +x ../reprise/Ordonnanceur/Ordonnanceur_run.sh
+#chmod +x ../reprise/Ordonnanceur/Ordonnanceur_run.sh
 
 cp -r ../reprise/* $TARGET_DIR
 
