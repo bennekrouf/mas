@@ -12,9 +12,4 @@ echo "Target VM : " $VM
 echo "Target Operation: " $CURRENT
 echo "#######################################"
 
-mysqldump --max_allowed_packet=1G --host=$SVN_SERVER --user=$MYSQL_USER -p$MYSQL_PASSWD --flush-privileges=TRUE --port=3306 --default-character-set=utf8 --no-data "APTISEC" > dump_"$PROJET".sql
-
-mysqldump --add-drop-database --max_allowed_packet=1G --host=$SVN_SERVER --user=$MYSQL_USER -p$MYSQL_PASSWD --flush-privileges=TRUE --port=3306 --default-character-set=utf8 -B "APTISEC" > dump_"$PROJET"_full.sql
-
-
-
+mysqldump --add-drop-database --max_allowed_packet=1G --host=$SVN_SERVER --user=$MYSQL_USER -p$MYSQL_PASSWD --flush-privileges=TRUE --port=3306 --default-character-set=utf8 -B "APTISEC" > dump_"$PROJET".sql
