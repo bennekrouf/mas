@@ -1,0 +1,9 @@
+
+# Modify : remote, groupId, artifactId, goals, recipients
+
+
+xml edit --update "//property[@name='XF86Display']/@value" --value "test" config.xml
+xml edit --update "//property[@name='XF86Display']/@value" --value "test" config.xml
+xml edit --update "//property[@name='XF86Display']/@value" --value "test" config.xml
+xml edit --update "//property[@name='XF86Display']/@value" --value "test" config.xml
+xml edit --update "//property[@name='XF86Display']/@value" --value "test" config.xml

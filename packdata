@@ -1,23 +1,22 @@
 source conf.secret
 
 TARGET_DIR=data
-HOME_LIVRAISON=LIVRAISON/16JUILLET
-
 
 if [ ! -d $TARGET_DIR ]; then
 	mkdir $TARGET_DIR
 fi
 
-mkdir $TARGET_DIR/dump
-mkdir $TARGET_DIR/dump-full
+./exportdb
 
-cp -r $HOME_LIVRAISON/dump/* $TARGET_DIR/dump
-cp -r $HOME_LIVRAISON/dump-full/* $TARGET_DIR/dump-full
+mv dump_"$PROJET"_full.sql $TARGET_DIR
+mv dump_"$PROJET".sql $TARGET_DIR
 
-cp ~/mas/loaddump $TARGET_DIR/dump
-cp ~/mas/loaddump $TARGET_DIR/dump-full
+cp loaddump $TARGET_DIR
+cp loaddump_full $TARGET_DIR
 
 tar -zcvf aptisec-1.0-data.tar.gz $TARGET_DIR
 rm -r $TARGET_DIR
 
 #tar -zxvf tar-archive-name.tar.gz
+
+

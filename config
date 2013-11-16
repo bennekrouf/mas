@@ -1,0 +1,6 @@
+Host OLDfr-wst-vm-0913.groupinfra.com
+User aptisec
+Hostname fr-wst-vm-0913.groupinfra.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa
+Port 443

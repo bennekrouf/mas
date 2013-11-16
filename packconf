@@ -1,18 +1,15 @@
 source conf.secret
 
 TARGET_DIR=conf
-HOME_LIVRAISON=LIVRAISON/16JUILLET
-
-
 
 if [ ! -d $TARGET_DIR ]; then
 	mkdir $TARGET_DIR
 fi
 
-cp -r $HOME_LIVRAISON/conf/standalone.xml $TARGET_DIR
-cp -r $HOME_LIVRAISON/conf/standalone-full.xml $TARGET_DIR
-cp -r $HOME_LIVRAISON/conf/module.xml $TARGET_DIR
-cp -r $HOME_LIVRAISON/conf/mysql-connector-java-5.1.20-bin.jar $TARGET_DIR
+cp -r /usr/share/jboss-as/standalone/configuration/standalone.xml $TARGET_DIR
+cp -r /usr/share/jboss-as/standalone/configuration/standalone-full.xml $TARGET_DIR
+cp -r /usr/share/jboss-as/modules/com/mysql/main/module.xml $TARGET_DIR
+cp -r /usr/share/jboss-as/modules/com/mysql/main/mysql-connector-java-5.1.20-bin.jar $TARGET_DIR
 
 tar -zcvf aptisec-1.0-conf.tar.gz $TARGET_DIR
 rm -r $TARGET_DIR
