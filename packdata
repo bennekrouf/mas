@@ -8,11 +8,17 @@ fi
 
 ./exportdb
 
+<<<<<<< HEAD
 mv dump_"$PROJET"_full.sql $TARGET_DIR
 mv dump_"$PROJET".sql $TARGET_DIR
 
 cp loaddump $TARGET_DIR
 cp loaddump_full $TARGET_DIR
+=======
+mv dump_"$PROJET".sql $TARGET_DIR
+
+cp loaddump $TARGET_DIR
+>>>>>>> ae0ea539b48f475f7fab65a3e7cb0bec033ead93
 
 tar -zcvf aptisec-1.0-data.tar.gz $TARGET_DIR
 rm -r $TARGET_DIR

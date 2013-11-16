@@ -6,7 +6,11 @@ TARGET_DIR=ear
 if [ ! -d $TARGET_DIR ]; then
 	mkdir $TARGET_DIR
 fi
+<<<<<<< HEAD
 cp -r /usr/share/jboss-as/standalone/deployments/aptisec-ear-1.0-SNAPSHOT.ear $TARGET_DIR
+=======
+cp -r /usr/share/jboss-as/.jenkins/workspace/aptisec-dev/aptisec-ear/target/aptisec-ear-1.0-SNAPSHOT.ear $TARGET_DIR
+>>>>>>> ae0ea539b48f475f7fab65a3e7cb0bec033ead93
 
 tar -zcvf aptisec-1.0-bin.tar.gz $TARGET_DIR
 rm -r $TARGET_DIR
