@@ -1,3 +1,7 @@
 git config --global --unset https.proxy
 git config --global --unset http.proxy
 
+
+npm config delete http_proxy
+npm config delete https_proxy
+
