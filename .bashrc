@@ -15,3 +15,5 @@ alias l="ls -l"
 alias s="(cd .; node server.js)"
 
 alias co="git checkout"
+
+alias subl="C:/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"
