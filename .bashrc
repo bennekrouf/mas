@@ -12,4 +12,6 @@ alias cdev=cfp
 alias cgit="cd ~/github/"
 
 alias l="ls -l"
+alias s="(cd .; node server.js)"
 
+alias co="git checkout"

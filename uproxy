@@ -4,4 +4,5 @@ git config --global --unset http.proxy
 
 npm config delete http_proxy
 npm config delete https_proxy
-
+npm config delete https-proxy
+npm config delete proxy
