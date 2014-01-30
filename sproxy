@@ -7,3 +7,6 @@ export https_proxy=http://fr-proxy.groupinfra.com:3128
 
 npm config set proxy http://fr-proxy.groupinfra.com:3128
 npm config set https-proxy http://fr-proxy.groupinfra.com:3128
+
+npm config set registry http://registry.npmjs.org/
+
