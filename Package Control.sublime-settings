@@ -1,0 +1,26 @@
+{
+	"installed_packages":
+	[
+		"Alignment",
+		"AngularJS",
+		"AngularJS Snippets",
+		"Bootstrap 3 Snippets",
+		"Emmet Css Snippets",
+		"Enhanced HTML and CFML",
+		"Enlightened Color Scheme",
+		"Gist",
+		"Google Search",
+		"Goto-CSS-Declaration",
+		"Grunt",
+		"JSHint",
+		"JSHint Gutter",
+		"Markdown Extended",
+		"Markdown Preview",
+		"Shell Command",
+		"SnippetMaker",
+		"SublimeLinter-jsl",
+		"TortoiseSVN",
+		"View In Browser",
+		"Worksheet"
+	]
+}
